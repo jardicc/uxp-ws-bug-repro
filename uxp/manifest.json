@@ -1,0 +1,53 @@
+{
+  "id": "Test-ieh905",
+  "name": "socket.bug",
+  "version": "1.0.0",
+  "main": "index.html",
+  "host": [
+    {
+      "app": "PS",
+      "minVersion": "24.0"
+    }
+  ],
+  "requiredPermissions": {
+    "network": {
+      "domains":"all"
+    },
+    "allowCodeGenerationFromStrings": true,
+    "ipc": {
+      "enableHostCommunication": true,
+      "enablePluginCommunication": true
+    }
+  },
+  "manifestVersion": 5,
+  "entryPoints": [
+    {
+      "type": "command",
+      "id": "showAlert",
+      "label": "Show alert"
+    },
+    {
+      "type": "panel",
+      "id": "vanilla",
+      "minimumSize": {
+        "width": 230,
+        "height": 200
+      },
+      "maximumSize": {
+        "width": 2000,
+        "height": 2000
+      },
+      "preferredDockedSize": {
+        "width": 230,
+        "height": 300
+      },
+      "preferredFloatingSize": {
+        "width": 230,
+        "height": 300
+      },
+      "label": {
+        "default": "Starter Panel"
+      }
+    }
+  ]
+}
